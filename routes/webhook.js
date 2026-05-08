@@ -1,0 +1,11 @@
+import { Router } from 'express';
+
+const router = Router();
+
+router.post('/webhook/mercado-pago', (req, res) => {
+  res.status(200).json({
+    received: true
+  });
+});
+
+export default router;
